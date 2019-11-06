@@ -52,6 +52,7 @@ public class VarastoTest {
     @Test
     public void ylivuotavaAlkusaldoAsettuuOikein() {
         varasto = new Varasto(30, 3000);
+        System.out.println("saldo testissä :" + varasto.getSaldo());
         assertEquals(30, varasto.getSaldo(), vertailuTarkkuus);
     }
 
